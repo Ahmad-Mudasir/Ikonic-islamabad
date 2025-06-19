@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--main container-->
+    <div class="p-0 m-0">
+      <!-- 🔹 Header main-->
+      <div class="bg-[#240D4B] md:h-screen relative">
+        <!-- 🔹 Nav Bar -->
+        <div class="flex justify-between items-center px-8">
+          <!-- Logo -->
+          <div class="text-2xl relative font-bold p-4">
+            <span class="text-white text-4xl font-extrabold">Greenlight</span>
+            <span
+              class="text-[10px] opacity-85 absolute left-6 bottom-2 block tracking-[0.8rem] text-white font-normal"
+              >DIGITAL</span
+            >
+          </div>
+
+          <!--nav right section parent div-->
+          <div class="flex flex-col gap-4 z-10 items-end w-[500px]">
+            <!-- 🔹 Top Bar -->
+            <div
+              class="flex justify-between gap-0 w-9/12 py-2 text-sm text-white"
+            >
+              <div class="flex items-center space-x-1">
+                <img
+                  src="./assets/Icon material-email.png"
+                  alt=""
+                  class="h-3"
+                />
+                <a
+                  href="mailto:info@greenlight-digital.co.uk"
+                  class="hover:underline text-[12px]"
+                  >info@greenlight-digital.co.uk</a
+                >
+              </div>
+              <div class="flex items-center space-x-1">
+                <img
+                  src="./assets/Icon material-email.png"
+                  alt=""
+                  class="h-3"
+                />
+                <p class="text-[12px]">01234 567 890</p>
+              </div>
+
+              <div class="space-x-2">
+                <a class="text-greenlight" href="#"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a class="text-greenlight" href="#"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a class="text-greenlight" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Nav Links -->
+            <div
+              class="space-x-[45px] text-white md:flex items-center text-sm hidden"
+            >
+              <a href="#" class="hover:text-greenlight font-bold"
+                >Our Websites</a
+              >
+              <a href="#" class="hover:text-greenlight font-bold">About Us</a>
+              <a href="#" class="hover:text-greenlight font-bold">Reviews</a>
+              <button
+                class="bg-[#AEE9B6] text-[#2d0154] px-4 font-bold text-xs py-2 rounded-md hover:bg-green-500"
+              >
+                Talk To Us
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 🔹 Main Content -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center px-8 py-12"
+        >
+          <!-- Left Content -->
+          <div class="max-w[400px] py-8 space-y-8 h-[65vh]">
+            <div class="space-y-2">
+              <h1
+                class="text-7xl text-white tracking-wide leading-none font-extrabold"
+              >
+                Ready To Go
+              </h1>
+              <h2 class="text-greenlight mb-6 text-[27px] font-bold">
+                Smart and efficient websites
+              </h2>
+              <p class="text-gray-200 text-[10px] max-w-[350px]">
+                We specialize in building high-quality, template-based websites
+                that save you time, energy, and money without sacrificing design
+                or functionality.
+              </p>
+              <h1 class="text-white font-bold text-sm">
+                Talk to us and we’ll get you up and running!
+              </h1>
+            </div>
+            <div class="space-x-4">
+              <button
+                class="bg-greenlight text-[#2d0154] px-5 py-1 rounded-md hover:bg-green-500 font-semibold"
+              >
+                Our Websites
+              </button>
+              <button
+                class="bg-transparent border border-[#AEE9B6] text-white px-5 py-1 rounded hover:bg-white hover:text-[#2d0154] font-semibold"
+              >
+                Talk To Us
+              </button>
+            </div>
+            <div class="space-x-8 flex items-center text-white mt-16">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1 class="inline-block">Affordable options</h1>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="w-2/4 flex justify-between relative z-10 mt-4 md:mt-5">
+            <div
+              class="w-[340px] h-[340px] relative flex items-center justify-center"
+            >
+              <img
+                src="./assets/header-right.png"
+                alt="Header Right Image"
+                class="w-full h-full object-cover rounded-lg"
+              />
+              <!-- Replace with actual phone mockup -->
+              <img
+                src="./assets/hand.png"
+                alt="Mockup"
+                class="absolute bottom-0 left-1/2 h-[400px] w-full -translate-x-1/2"
+              />
+            </div>
+          </div>
+          <div
+            class="absolute bg-[#41286C] top-0 right-0 w-[51%] h-[96.7vh] max-h-[530px] rounded-bl-[180px]"
+          ></div>
+        </div>
+      </div>
+      <!---Header section End-->
+
+      <!-- 🔹 our website section -->
+      <section class="py-12 lg:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div
+          class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 lg:mb-12 gap-4"
+        >
+          <!-- Left Side: Title and Navigation Arrows -->
+          <div class="flex items-center gap-4">
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-purple-dark"
+            >
+              Our Websites
+            </h2>
+
+            <!-- Navigation Arrows -->
+            <div class="flex gap-2">
+              <button
+                id="prev-btn"
+                class="w-10 h-10 bg-[#89D991] rounded-full flex items-center justify-center hover:bg-green-400 transition-colors shadow-md"
+              >
+                <i class="fas fa-chevron-left text-purple-dark text-sm"></i>
+              </button>
+              <button
+                id="next-btn"
+                class="w-10 h-10 bg-[#89D991] rounded-full flex items-center justify-center hover:bg-green-400 transition-colors shadow-md"
+              >
+                <i class="fas fa-chevron-right text-purple-dark text-sm"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Side: See More Button -->
+          <button
+            class="bg-[#89D991] text-purple-dark px-6 py-1 rounded-lg font-semibold hover:bg-green-400 transition-colors shadow-md whitespace-nowrap"
+          >
+            See More Websites
+          </button>
+        </div>
+        <div class="relative overflow-hidden">
+          <div
+            id="cards-container"
+            class="flex transition-transform duration-500 ease-in-out gap-6"
+          >
+            <!-- Card 1: Cagney's -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <!-- Image Section -->
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/card-1.png"
+                    alt="Cagney's Website"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <!-- Text Section -->
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">Cagney's</h3>
+                  <p class="text-sm text-gray-600">
+                    Booking System | Hospitality
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: FPC Solutions -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <!-- Image Section -->
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/card-2.png"
+                    alt="FPC Solutions Website"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <!-- Text Section -->
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">FPC Solutions</h3>
+                  <p class="text-sm text-gray-600">E-Commerce | Industrial</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Mamma Post Natal -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <!-- Image Section -->
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/card-3.png"
+                    alt="Mamma Post Natal Website"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <!-- Text Section -->
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">
+                    Mamma Post Natal
+                  </h3>
+                  <p class="text-sm text-gray-600">Doctors | Fitness</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Inorlo -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <!-- Image Section -->
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/card-4.png"
+                    alt="Inorlo Website"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <!-- Text Section -->
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">Inorlo</h3>
+                  <p class="text-sm text-gray-600">E-commerce | Technology</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Cards for Carousel Effect -->
+            <!-- Card 5: Example -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/placeholder.svg?height=240&width=320"
+                    alt="Website Example"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">
+                    Tech Solutions
+                  </h3>
+                  <p class="text-sm text-gray-600">Software | Technology</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Example -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/placeholder.svg?height=240&width=320"
+                    alt="Website Example"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">Health Plus</h3>
+                  <p class="text-sm text-gray-600">Healthcare | Medical</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- our website section end -->
+
+      <!-- get our website in three easy step -->
+      <section class="py-12 lg:py-13">
+        <div class="w-full">
+          <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <!-- Left Side - Single Group Image with Green Background -->
+            <div class="relative order-2 lg:order-1">
+              <!-- Green Background Shape -->
+              <div
+                class="bg-[#AEE9B6] rounded-r-3xl w-[500px] lg:rounded-r-[3rem] min-h-[350px] lg:min-h-[500px] flex"
+              >
+                <!-- Single Group Image Container -->
+                <div class="w-full h-full flex">
+                  <!-- Group Image of Mobile Phones -->
+
+                  <img
+                    src="./assets/mobile-group.png"
+                    alt="Mobile Websites Group"
+                    class="w-full absolute -top-16 h-auto max-h-[500px] lg:max-h-[630px] -left-11 object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                    id="group-image"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side - Content -->
+            <div
+              class="px-4 lg:px-8 md:p-9 md:h-[500px] relative order-1 lg:order-2"
+            >
+              <!-- Main Heading -->
+              <div class="mb-8 lg:mb-2">
+                <h2
+                  class="text-3xl lg:text-5xl font-bold text-purple-dark mb-2"
+                >
+                  Get your website in
+                </h2>
+                <h3
+                  class="text-3xl mb-3 lg:text-4xl xl:text-5xl font-bold text-[#89D991]"
+                >
+                  three easy steps
+                </h3>
+              </div>
+
+              <!-- Steps Container -->
+              <div class="space-y-6 lg:space-y-2">
+                <!-- Step 1: Select -->
+                <div
+                  class="flex items-start gap-4 lg:gap-6 step-item"
+                  data-step="1"
+                >
+                  <!-- Icon -->
+                  <div
+                    class="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-[#89D991] rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <img class="h-6 w-6" src="./assets/icon1.png" alt="" />
+                  </div>
+                  <!-- Content -->
+                  <div class="flex-1">
+                    <h4
+                      class="text-lg lg:text-xl font-bold h-6 text-purple-dark"
+                    >
+                      Select
+                    </h4>
+                    <p class="text-sm lg:text-base text-gray-600 leading-tight">
+                      From our library of professional-grade templates.
+                    </p>
+                  </div>
+                </div>
+                <div class="mx-7 w-[2px] h-5 bg-[#240D4B]"></div>
+                <!-- Step 2: Customise -->
+                <div
+                  class="flex items-start gap-4 lg:gap-6 step-item"
+                  data-step="2"
+                >
+                  <!-- Icon -->
+                  <div
+                    class="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-[#89D991] rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <img class="h-6 w-6" src="./assets/icon2.png" alt="" />
+                  </div>
+                  <!-- Content -->
+                  <div class="flex-1">
+                    <h4
+                      class="text-lg lg:text-xl font-bold text-purple-dark h-6"
+                    >
+                      Customise
+                    </h4>
+                    <p class="text-sm lg:text-base text-gray-600 leading-tight">
+                      With brand-specific colors, fonts, and images to make the
+                      site uniquely yours.
+                    </p>
+                  </div>
+                </div>
+                <div class="mx-7 w-[2px] h-5 bg-[#240D4B]"></div>
+                <!-- Step 3: Launch -->
+                <div
+                  class="flex items-start gap-4 lg:gap-6 step-item"
+                  data-step="3"
+                >
+                  <!-- Icon -->
+                  <div
+                    class="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-[#89D991] rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <img class="h-6 w-6" src="./assets/icon3.png" alt="" />
+                  </div>
+                  <!-- Content -->
+                  <div class="flex-1">
+                    <h4
+                      class="text-lg lg:text-xl font-bold text-purple-dark h-6"
+                    >
+                      Launch
+                    </h4>
+                    <p class="text-sm lg:text-base text-gray-600 leading-tight">
+                      A website that's ready to go live and drive results.
+                    </p>
+                  </div>
+                </div>
+                <!-- Step 4: button -->
+                <div class="flex items-start gap-4 lg:gap-6">
+                  <div
+                    class="ml-7 w-7 h-7 bg-transparent border-[#240D4B] border-l-2 border-b-2"
+                  ></div>
+                  <!-- Call to Action Button -->
+                  <div class="">
+                    <button
+                      class="bg-transparent mt-1 border-2 border-greenlight text-purple-dark px-6 py-1 rounded-lg font-semibold hover:bg-greenlight hover:text-purple-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Talk To Us
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Circular Badge - Bottom Right -->
+              <div class="absolute w-32 -bottom-4 lg:bottom-0 right-0">
+                <img
+                  class="w-full h-full"
+                  src="./assets/text-circle.png"
+                  alt=""
+                  style="animation-duration: 10s"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- get our website in three easy step end -->
+
+      <!--  Section 4 -->
+        <section class=" h-[90vh] mt-12">
+          <!-- parent div -->
+           <div class="flex relative h-full">
+             <!-- Left Sidebar (Fixed width on desktop, hidden on mobile) -->
+    <div class="w-[250px] h-full bg-[#AEE9B6] hidden md:block">
+      <!-- Sidebar content -->
+    </div>
+
+    <!-- Right Content Area (Fluid width) -->
+    <div class="flex-1 relative overflow-hidden">
+      <img 
+        class="w-full h-full object-cover" 
+        src="./assets/AdobeStock.png" 
+        alt=""
+        loading="lazy"
+      >
+    </div>
+     <!-- Overlay Text card -->
+      <div class="absolute bg-white w-[400px] h-[400px] rounded-lg  translate-16">
+        <div class="p-12 space-y-2">
+          <h1 class="text-[#240D4B] text-4xl font-bold">We’re all about simplicity, speed and results</h1>
+          <p class="text-xs">Our unique approach combines pre-designed templates with customisation options to match your brand’s unique identity. This means you get a beautifully designed, fully responsive, and optimised website faster than ever, with the confidence that everything is crafted with intention and expertise.</p>
+<p class="text-xs">We’re not just building websites; we’re powering up your online presence so you can focus on what you do best.</p>
+          <div class="flex gap-2 mt-8">
+            <button class="bg-[#240D4B] text-xs px-3 py-1 font-bold rounded-md text-white">Find Out More</button>
+            <button class="text-xs px-4 py-1 font-bold rounded-md text-black border-2 border-[#89D991]">Talk to us</button>
+          </div>
+        </div>
+      </div>
+           </div>
+        </section>
+                                   <!--  Section 4 end -->
+
+    <!--Section 5-->    
+    <section class="bg-[#240D4B]  py-5">
+     <!-- parent div -->
+      <div class="p-8 space-y-20">
+        <!--Top div-->
+        <div class="space-y-4 text-white">
+        <h1>HERE’S WHAT TO EXPECT:</h1>
+        <div class="shadow-[0_0_15px_5px_rgba(0,0,0,0.59)] flex gap-4 p-4 items-center">
+          <div class=" w-16 h-16 rounded-full">
+            <img src="./assets/section4-icon1.png" alt="">
+          </div>
+          <div>
+            <h1 class="text-4xl font-bold text-[#AEE9B6]">Fast Turnarounds</h1>
+            <p>Get your website live in record time without compromising on quality.</p>
+          </div>
+        </div>
+        <div class="shadow-[0_0_15px_5px_rgba(0,0,0,0.59)] flex gap-4 p-4 items-center">
+          <div class=" w-16 h-16 rounded-full">
+            <img src="./assets/section4-icon2.png" alt="">
+          </div>
+          <div>
+            <h1 class="text-4xl font-bold text-[#AEE9B6]">Fast Turnarounds</h1>
+            <p>Get your website live in record time without compromising on quality.</p>
+          </div>
+        </div>
+        <div class="shadow-[0_0_15px_5px_rgba(0,0,0,0.59)] flex gap-4 p-4 items-center">
+          <div class=" w-16 h-16 rounded-full">
+            <img src="./assets/section4-icon3.png" alt="">
+          </div>
+          <div>
+            <h1 class="text-4xl font-bold text-[#AEE9B6]">Fast Turnarounds</h1>
+            <p>Get your website live in record time without compromising on quality.</p>
+          </div>
+        </div>
+        </div>
+        <!--Bottom div-->
+        <div class="bg-white h-auto  relative flex md:justify-end ">
+            <div class="w-full md:w-8/12 right-0 h-full p-20">
+              <div>
+                <h1 class="bg-[#AEE9B6] inline-block p-1 text-sm  px-2 text-[#240D4B] rounded-lg">A message from our founder</h1>
+                <h2 class="text-[#240D4B] text-3xl md:text-5xl font-extrabold mt-1" cl>Greenlight was created to fix the pitfalls I’ve seen over my 20 year career</h2>
+              </div>
+              <div class=" space-y-3 w-full md:w-2/3 md:justify-self-end mt-4 ">
+                <p class="text-xs ">When I started this journey, I had one goal in mind: to simplify the process of building high-quality websites for businesses like yours. I’ve seen too many people overwhelmed by complicated tech, overblown costs, and endless delays—and I knew there had to be a better way.</p>
+                <p class="text-xs ">At Green Light Digital, we believe every business deserves a professional online presence without the stress. That’s why we focus on speed, affordability, and transparency, delivering websites that not only look amazing but are ready to drive results.</p>
+                <h1>Thank you  for trusting us with your vision. We’re excited to help you bring it to life!</h1>
+                <div class="flex">
+                  <img class="w-20 h-20" src="./assets//Daniel.png" alt="">  
+                  <img class="w-20 h-20" src="./assets//Brown.png" alt="">
+                </div>
+                <div class="flex justify-between items-center">
+                  <div>
+                    <h1>Daniel Brown</h1>
+                    <p>Founder & Director</p>
+                  </div>
+                  <button class="bg-[#240D4B]  px-4 h-8 text-white font-bold rounded-lg">Get Started</button>
+                </div>
+              </div>
+            </div>
+            <img  class="absolute top-0 left-0 w-[55vw] hidden md:block  h-full" src="./assets/DanielBrown.png" alt="">
+        </div>
+      </div>
+    </section>                           
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

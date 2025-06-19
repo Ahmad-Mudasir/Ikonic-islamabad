@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+@layer utilities {
+  .bg-greenlight {
+    background-color: #AEE9B6;
+  }
+  .text-greenlight {
+    color: #AEE9B6;
+  }
+  .border-greenlight {
+    border-color: #AEE9B6;
+  }
+}
+
