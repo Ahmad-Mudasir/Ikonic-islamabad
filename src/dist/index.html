@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--main container-->
+    <div class="p-0 m-0">
+      <!-- 🔹 Header main-->
+      <div class="bg-[#240D4B] md:h-screen relative">
+        <!-- 🔹 Nav Bar -->
+        <div class="flex justify-between items-center px-8">
+          <!-- Logo -->
+          <div class="text-2xl relative font-bold p-4">
+            <span class="text-white text-4xl font-extrabold">Greenlight</span>
+            <span
+              class="text-[10px] opacity-85 absolute left-6 bottom-2 block tracking-[0.8rem] text-white font-normal"
+              >DIGITAL</span
+            >
+          </div>
+
+          <!--nav right section parent div-->
+          <div class="flex flex-col gap-4 z-10 items-end w-[500px]">
+            <!-- 🔹 Top Bar -->
+             <div id="menu-btn" class="block cursor-pointer md:hidden">
+              <i class="fa-solid fa-bars text-white"></i>
+             </div>
+            <div
+              class="hidden md:flex justify-between gap-0 w-9/12 py-2 text-sm text-white"
+            >
+              <div class="flex items-center space-x-1">
+                <img
+                  src="./assets/Icon material-email.png"
+                  alt=""
+                  class="h-3"
+                />
+                <a
+                  href="mailto:info@greenlight-digital.co.uk"
+                  class="hover:underline text-[12px]"
+                  >info@greenlight-digital.co.uk</a
+                >
+              </div>
+              <div class="flex items-center space-x-1">
+                <img
+                  src="./assets/Icon material-email.png"
+                  alt=""
+                  class="h-3"
+                />
+                <p class="text-[12px]">01234 567 890</p>
+              </div>
+
+              <div class="space-x-2">
+                <a class="text-greenlight" href="#"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a class="text-greenlight" href="#"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a class="text-greenlight" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Nav Links -->
+            <div
+              class="space-x-[45px] text-white md:flex items-center text-sm hidden"
+            >
+              <a href="#" class="hover:text-greenlight font-bold"
+                >Our Websites</a
+              >
+              <a href="#" class="hover:text-greenlight font-bold">About Us</a>
+              <a href="#" class="hover:text-greenlight font-bold">Reviews</a>
+              <button
+                class="bg-[#AEE9B6] text-[#2d0154] px-4 font-bold text-xs py-2 rounded-md hover:bg-green-500"
+              >
+                Talk To Us
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 🔹 Main Content -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center px-8 py-12"
+        >
+          <!-- Left Content -->
+          <div class="max-md:w-full md:max-w[400px] py-8 space-y-8 h-[65vh]">
+            <div class="space-y-2">
+              <h1
+                class="text-6xl md:text-7xl text-white tracking-wide leading-none font-extrabold"
+              >
+                Ready To Go
+              </h1>
+              <h2 class="text-greenlight mb-6 text-xl md:text-[27px] font-bold">
+                Smart and efficient websites
+              </h2>
+              <p class="text-gray-200 text-[10px] max-w-[350px]">
+                We specialize in building high-quality, template-based websites
+                that save you time, energy, and money without sacrificing design
+                or functionality.
+              </p>
+              <h1 class="text-white font-bold text-sm">
+                Talk to us and we’ll get you up and running!
+              </h1>
+            </div>
+            <div class="space-x-4">
+              <button
+                class="bg-greenlight text-[#2d0154] px-5 py-1 rounded-md hover:bg-green-500 font-semibold"
+              >
+                Our Websites
+              </button>
+              <button
+                class="bg-transparent border border-[#AEE9B6] text-white px-5 py-1 rounded hover:bg-white hover:text-[#2d0154] font-semibold"
+              >
+                Talk To Us
+              </button>
+            </div>
+            <div class="space-x-8 flex items-center text-white mt-16">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1 class="inline-block">Affordable options</h1>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="w-full  md:w-2/4 flex justify-center md:justify-between relative z-10 mt-12 md:mt-5">
+            <div
+              class="w-[340px] h-[340px] relative flex items-center justify-center"
+            >
+              <img
+                src="./assets/header-right.png"
+                alt="Header Right Image"
+                class="w-full h-full object-cover rounded-lg"
+              />
+              
+              <img
+                src="./assets/hand.png"
+                alt="Mockup"
+                class="absolute bottom-0 left-1/2 h-[400px] w-full -translate-x-1/2"
+              />
+            </div>
+          </div>
+          <div
+            class="absolute bg-[#41286C] hidden md:block top-0 right-0 w-[51%] h-[96.7vh] max-h-[530px] rounded-bl-[180px]"
+          ></div>
+        </div>
+      </div>
+      <!-- Mobile Navigation Overlay -->
+<div id="mobile-nav" class="absolute top-0 w-[300px] right-2 h-screen bg-[#4a2486] z-50 hidden flex-col items-center justify-center text-white space-y-8 text-xl">
+  <button id="close-nav" class="absolute top-6 right-6 text-3xl"><i class="fa-solid fa-xmark"></i></button>
+  <a href="#" class="hover:text-green-400 font-bold">Our Websites</a>
+  <a href="#" class="hover:text-green-400 font-bold">About Us</a>
+  <a href="#" class="hover:text-green-400 font-bold">Reviews</a>
+  <button class="bg-[#AEE9B6] text-[#2d0154] px-6 py-2 rounded-md font-bold">Talk To Us</button>
+</div>
+
+      <!---Header section End-->
+
+      <!-- 🔹 our website section -->
+      <section class="py-12 lg:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div
+          class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 lg:mb-12 gap-4"
+        >
+          <!-- Left Side: Title and Navigation Arrows -->
+          <div class="flex items-center gap-4">
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-purple-dark"
+            >
+              Our Websites
+            </h2>
+
+            <!-- Navigation Arrows -->
+            <div class="flex gap-2">
+              <button
+                id="prev-btn"
+                class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-green-400 transition-colors shadow-md"
+              >
+                <img class="text-white" src="./assets/Icon-back-circle.png" alt="">
+              </button>
+              <button
+                id="next-btn"
+                class="w-10 h-10 rounded-full flex  items-center justify-center hover:bg-green-400 transition-colors shadow-md"
+              >
+                <img class=" " src="./assets/Icon-next-circle.png"  alt="">
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Side: See More Button -->
+          <button
+            class="bg-[#89D991] text-purple-dark px-6 py-1 rounded-lg font-semibold hover:bg-green-400 transition-colors shadow-md whitespace-nowrap"
+          >
+            See More Websites
+          </button>
+        </div>
+        <div class="relative overflow-hidden">
+          <div
+            id="cards-container"
+            class="flex transition-transform duration-500 ease-in-out gap-6"
+          >
+            <!-- Card 1: Cagney's -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <!-- Image Section -->
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/card-1.png"
+                    alt="Cagney's Website"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <!-- Text Section -->
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">Cagney's</h3>
+                  <p class="text-sm text-gray-600">
+                    Booking System | Hospitality
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: FPC Solutions -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <!-- Image Section -->
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/card-2.png"
+                    alt="FPC Solutions Website"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <!-- Text Section -->
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">FPC Solutions</h3>
+                  <p class="text-sm text-gray-600">E-Commerce | Industrial</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Mamma Post Natal -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <!-- Image Section -->
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/card-3.png"
+                    alt="Mamma Post Natal Website"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <!-- Text Section -->
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">
+                    Mamma Post Natal
+                  </h3>
+                  <p class="text-sm text-gray-600">Doctors | Fitness</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Inorlo -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <!-- Image Section -->
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="./assets/card-4.png"
+                    alt="Inorlo Website"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <!-- Text Section -->
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">Inorlo</h3>
+                  <p class="text-sm text-gray-600">E-commerce | Technology</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Cards for Carousel Effect -->
+            <!-- Card 5: Example -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/placeholder.svg?height=240&width=320"
+                    alt="Website Example"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">
+                    Tech Solutions
+                  </h3>
+                  <p class="text-sm text-gray-600">Software | Technology</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Example -->
+            <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 xl:w-1/4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <div class="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="/placeholder.svg?height=240&width=320"
+                    alt="Website Example"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div class="p-4 space-y-1">
+                  <h3 class="text-lg font-bold text-gray-900">Health Plus</h3>
+                  <p class="text-sm text-gray-600">Healthcare | Medical</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- our website section end -->
+
+      <!-- get our website in three easy step -->
+      <section class="py-12 lg:py-13">
+        <div class="w-full">
+          <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <!-- Left Side - Single Group Image with Green Background -->
+            <div class="relative order-2 lg:order-1">
+              <!-- Green Background Shape -->
+              <div
+                class="bg-[#AEE9B6] hidden lg:block rounded-r-3xl w-[500px] lg:rounded-r-[3rem] min-h-[350px] lg:min-h-[500px] "
+              >
+                <div class="w-full h-full flex">
+                  <!-- Group Image of Mobile Phones -->
+
+                  <img
+                    src="./assets/mobile-group.png"
+                    alt="Mobile Websites Group"
+                    class="hidden lg:block lg:w-[500px] absolute -top-14 h-auto   object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                    id="group-image"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side - Content -->
+            <div
+              class="px-4 lg:px-8 md:p-9 md:h-[500px] relative order-1 lg:order-2"
+            >
+              <!-- Main Heading -->
+              <div class="mb-8 lg:mb-2">
+                <h2
+                  class="text-3xl lg:text-5xl font-bold text-purple-dark mb-2"
+                >
+                  Get your website in
+                </h2>
+                <h3
+                  class="text-3xl mb-3 lg:text-4xl xl:text-5xl font-bold text-[#89D991]"
+                >
+                  three easy steps
+                </h3>
+              </div>
+
+              <!-- Steps Container -->
+              <div class="space-y-6 lg:space-y-2">
+                <!-- Step 1: Select -->
+                <div
+                  class="flex items-start gap-4 lg:gap-6 step-item"
+                  data-step="1"
+                >
+                  <!-- Icon -->
+                  <div
+                    class="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-[#89D991] rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <img class="h-6 w-6" src="./assets/icon1.png" alt="" />
+                  </div>
+                  <!-- Content -->
+                  <div class="flex-1">
+                    <h4
+                      class="text-lg lg:text-xl font-bold h-6 text-purple-dark"
+                    >
+                      Select
+                    </h4>
+                    <p class="text-sm lg:text-base text-gray-600 leading-tight">
+                      From our library of professional-grade templates.
+                    </p>
+                  </div>
+                </div>
+                <div class="mx-7 w-[2px] h-5 bg-[#240D4B]"></div>
+                <!-- Step 2: Customise -->
+                <div
+                  class="flex items-start gap-4 lg:gap-6 step-item"
+                  data-step="2"
+                >
+                  <!-- Icon -->
+                  <div
+                    class="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-[#89D991] rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <img class="h-6 w-6" src="./assets/icon2.png" alt="" />
+                  </div>
+                  <!-- Content -->
+                  <div class="flex-1">
+                    <h4
+                      class="text-lg lg:text-xl font-bold text-purple-dark h-6"
+                    >
+                      Customise
+                    </h4>
+                    <p class="text-sm lg:text-base text-gray-600 leading-tight">
+                      With brand-specific colors, fonts, and images to make the
+                      site uniquely yours.
+                    </p>
+                  </div>
+                </div>
+                <div class="mx-7 w-[2px] h-5 bg-[#240D4B]"></div>
+                <!-- Step 3: Launch -->
+                <div
+                  class="flex items-start gap-4 lg:gap-6 step-item"
+                  data-step="3"
+                >
+                  <!-- Icon -->
+                  <div
+                    class="flex-shrink-0 w-10 h-10 lg:w-12 lg:h-12 bg-[#89D991] rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <img class="h-6 w-6" src="./assets/icon3.png" alt="" />
+                  </div>
+                  <!-- Content -->
+                  <div class="flex-1">
+                    <h4
+                      class="text-lg lg:text-xl font-bold text-purple-dark h-6"
+                    >
+                      Launch
+                    </h4>
+                    <p class="text-sm lg:text-base text-gray-600 leading-tight">
+                      A website that's ready to go live and drive results.
+                    </p>
+                  </div>
+                </div>
+                <!-- Step 4: button -->
+                <div class="flex items-start gap-4 lg:gap-6">
+                  <div
+                    class="ml-7 w-7 h-7 bg-transparent border-[#240D4B] border-l-2 border-b-2"
+                  ></div>
+                  <!-- Call to Action Button -->
+                  <div class="">
+                    <button
+                      class="bg-transparent mt-1 border-2 border-greenlight text-purple-dark px-6 py-1 rounded-lg font-semibold hover:bg-greenlight hover:text-purple-dark transition-all duration-300 transform hover:scale-105"
+                    >
+                      Talk To Us
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Circular Badge - Bottom Right -->
+              <div class="absolute hidden sm:block w-32 -bottom-4 lg:bottom-0 right-0">
+                <img
+                  class="w-full h-full"
+                  src="./assets/text-circle.png"
+                  alt=""
+                  style="animation-duration: 10s"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- get our website in three easy step end -->
+
+      <!--  Section 4 -->
+        <section class=" h-[90vh] mt-12">
+          <!-- parent div -->
+           <div class="flex relative h-full">
+             <!-- Left Sidebar (Fixed width on desktop, hidden on mobile) -->
+    <div class="w-[250px] h-full bg-[#AEE9B6] hidden md:block">
+      <!-- Sidebar content -->
+    </div>
+
+    <!-- Right Content Area (Fluid width) -->
+    <div class="flex-1 relative overflow-hidden">
+      <img 
+        class="w-full h-full object-cover" 
+        src="./assets/AdobeStock.png" 
+        alt=""
+        loading="lazy"
+      >
+    </div>
+     <!-- Overlay Text card -->
+      <div class="absolute bg-white w-[400px] h-[400px] rounded-lg  translate-16">
+        <div class="p-12 space-y-2">
+          <h1 class="text-[#240D4B] text-4xl font-bold">We’re all about simplicity, speed and results</h1>
+          <p class="text-xs">Our unique approach combines pre-designed templates with customisation options to match your brand’s unique identity. This means you get a beautifully designed, fully responsive, and optimised website faster than ever, with the confidence that everything is crafted with intention and expertise.</p>
+<p class="text-xs">We’re not just building websites; we’re powering up your online presence so you can focus on what you do best.</p>
+          <div class="flex gap-2 mt-8">
+            <button class="bg-[#240D4B] text-xs px-3 py-1 font-bold rounded-md text-white">Find Out More</button>
+            <button class="text-xs px-4 py-1 font-bold rounded-md text-black border-2 border-[#89D991]">Talk to us</button>
+          </div>
+        </div>
+      </div>
+           </div>
+        </section>
+                                   <!--  Section 4 end -->
+
+    <!--Section 5-->    
+    <section class="bg-[#240D4B]  py-5">
+     <!-- parent div -->
+      <div class="p-8 space-y-20">
+        <!--Top div-->
+        <div class="space-y-4 text-white">
+        <h1>HERE’S WHAT TO EXPECT:</h1>
+        <div class="shadow-[0_0_15px_5px_rgba(0,0,0,0.59)] flex gap-4 p-4 items-center">
+          <div class=" w-16 h-16 rounded-full">
+            <img src="./assets/section4-icon1.png" alt="">
+          </div>
+          <div>
+            <h1 class="text-4xl font-bold text-[#AEE9B6]">Fast Turnarounds</h1>
+            <p>Get your website live in record time without compromising on quality.</p>
+          </div>
+        </div>
+        <div class="shadow-[0_0_15px_5px_rgba(0,0,0,0.59)] flex gap-4 p-4 items-center">
+          <div class=" w-16 h-16 rounded-full">
+            <img src="./assets/section4-icon2.png" alt="">
+          </div>
+          <div>
+            <h1 class="text-4xl font-bold text-[#AEE9B6]">Fast Turnarounds</h1>
+            <p>Get your website live in record time without compromising on quality.</p>
+          </div>
+        </div>
+        <div class="shadow-[0_0_15px_5px_rgba(0,0,0,0.59)] flex gap-4 p-4 items-center">
+          <div class=" w-16 h-16 rounded-full">
+            <img src="./assets/section4-icon3.png" alt="">
+          </div>
+          <div>
+            <h1 class="text-4xl font-bold text-[#AEE9B6]">Fast Turnarounds</h1>
+            <p>Get your website live in record time without compromising on quality.</p>
+          </div>
+        </div>
+        </div>
+        <!--Bottom div-->
+        <div class="bg-white h-auto  relative flex md:justify-end ">
+            <div class="w-full md:w-8/12 right-0 h-full p-20">
+              <div>
+                <h1 class="bg-[#AEE9B6] inline-block p-1 text-sm  px-2 text-[#240D4B] rounded-lg">A message from our founder</h1>
+                <h2 class="text-[#240D4B] text-3xl md:text-5xl font-extrabold mt-1" cl>Greenlight was created to fix the pitfalls I’ve seen over my 20 year career</h2>
+              </div>
+              <div class=" space-y-3 w-full md:w-2/3 md:justify-self-end mt-4 ">
+                <p class="text-xs ">When I started this journey, I had one goal in mind: to simplify the process of building high-quality websites for businesses like yours. I’ve seen too many people overwhelmed by complicated tech, overblown costs, and endless delays—and I knew there had to be a better way.</p>
+                <p class="text-xs ">At Green Light Digital, we believe every business deserves a professional online presence without the stress. That’s why we focus on speed, affordability, and transparency, delivering websites that not only look amazing but are ready to drive results.</p>
+                <h1>Thank you  for trusting us with your vision. We’re excited to help you bring it to life!</h1>
+                <div class="flex">
+                  <img class="w-20 h-20" src="./assets//Daniel.png" alt="">  
+                  <img class="w-20 h-20" src="./assets//Brown.png" alt="">
+                </div>
+                <div class="flex justify-between items-center">
+                  <div>
+                    <h1>Daniel Brown</h1>
+                    <p>Founder & Director</p>
+                  </div>
+                  <button class="bg-[#240D4B]  px-4 h-8 text-white font-bold rounded-lg">Get Started</button>
+                </div>
+              </div>
+            </div>
+            <img  class="absolute top-0 left-0 w-[55vw] hidden md:block  h-full" src="./assets/DanielBrown.png" alt="">
+        </div>
+      </div>
+    </section>   
+    <!--section 5 end-->
+
+  <!-- section 6 -->
+  <section class="bg-white py-12 sm:py-16 lg:py-20">
+        <div class="container text-[#240D4B] mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header Section -->
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl text-[#240D4B] sm:text-4xl lg:text-5xl font-bold  mb-4">
+                        Greenlight giving back
+                    </h2>
+                    <p class=" text-base sm:text-lg leading-relaxed">
+                        First and foremost, we are a business, but we are also doing our bit to be the good guys! 
+                        Here's how we're supporting the local community.
+                    </p>
+                </div>
+                <button class="bg-[#240D4B] hover:bg-brand-purple/90 text-white px-6 py-3 text-sm font-medium rounded-lg w-fit lg:mt-0 transition-colors">
+                    Find Out More
+                </button>
+            </div>
+
+            <!-- Cards Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                
+                <!-- Family in Action Card -->
+                <div class="group">
+                    <div class="relative mb-6 h-48 sm:h-56 rounded-lg overflow-hidden bg-[#EDEFBB]">
+                       <img src="./assets/section-5Image1.png" 
+                             alt="family arrow image" 
+                             class="w-full h-full object-cover"> 
+                       
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-purple mb-3">Family in Action</h3>
+                        <p class=" text-sm leading-relaxed">
+                            We donate 1% of our profits to this vital charity, helping families in need.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Learning Support Card -->
+                <div class="group">
+                    <div class="relative mb-6 h-48 sm:h-56 rounded-lg overflow-hidden bg-gray-200">
+                        <img src="./assets/section-5Image2.png" 
+                             alt="Learning Support - Two people in mentoring session" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-purple mb-3">Learning Support</h3>
+                        <p class=" text-sm leading-relaxed">
+                            We train and employ young adults with disabilities to build confidence, develop web skills, and earn a meaningful income.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Community Support Card -->
+                <div class="group">
+                    <div class="relative mb-6 h-48 sm:h-56 rounded-lg overflow-hidden bg-gray-200">
+                        <img src="./assets/section-5Image3.png" 
+                             alt="Community Support - People in collaborative meeting" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-purple mb-3">Community support</h3>
+                        <p class=" text-sm leading-relaxed">
+                            We create free websites for businesses in need, keeping them online and operational during challenging times.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- section 6 end -->
+
+                                                    <!-- section 7 review-->
+ <section class="py-12 sm:py-16 lg:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header Section -->
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-12 gap-6">
+                <div class="flex items-center gap-4">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#240D4B]">
+                        What our clients say
+                    </h2>
+                    <!-- Navigation Buttons -->
+                    <div class="flex gap-2">
+                        <button id="prevBtn" class="w-10 h-10 bg-white hover:bg-green-500 rounded-full flex items-center justify-center text-white transition-colors">
+                           <img class="text-white" src="./assets/Icon-back-circle.png" alt="">
+                        </button>
+                        <button id="nextBtn" class="w-10 h-10 bg-white hover:bg-green-500 rounded-full flex items-center justify-center text-white transition-colors">
+                            <img class="text-white" src="./assets/Icon-next-circle.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <button class="bg-[#240D4B] hover:bg-brand-purple/90 text-white px-6 py-2 text-sm font-medium rounded-lg transition-colors w-fit">
+                    Read More Reviews
+                </button>
+            </div>
+
+            <!-- Testimonials Container -->
+            <div class="relative overflow-hidden">
+                <div id="testimonialsSlider" class="flex transition-transform duration-500 ease-in-out">
+                    
+                    <!-- Testimonial Set 1 -->
+                    <div class="w-full flex-shrink-0">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                            <!-- Testimonial 1 -->
+                            <div class="bg-[#240D4B] rounded-2xl p-6 text-white">
+                                <!-- Star Rating -->
+                                <div class="flex gap-1 mb-4">
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-sm leading-relaxed mb-4">
+                                    Green Light Digital took my website to the next level in record time! The design options were fantastic, and the customization process was so smooth. Now, my site looks polished and professional, and I didn't have to break the bank. Highly recommend!
+                                </p>
+                                <p class="text-sm font-medium">- Alex P, Small Business Owner</p>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="bg-[#240D4B] rounded-2xl p-6 text-white">
+                                <!-- Star Rating -->
+                                <div class="flex gap-1 mb-4">
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-sm leading-relaxed mb-4">
+                                    The Green Light team is incredible! They guided me through every step of the process, from selecting a template to launching my site. I now have a beautiful, functional website that perfectly represents my brand. Couldn't be happier!
+                                </p>
+                                <p class="text-sm font-medium">- Jenna R, Small Business Owner</p>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="bg-[#240D4B] rounded-2xl p-6 text-white">
+                                <!-- Star Rating -->
+                                <div class="flex gap-1 mb-4">
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-[#AEE9B6] fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-sm leading-relaxed mb-4">
+                                    Working with Green Light Digital was the best decision for my business. They made web design easy, fast, and affordable, while still giving me a custom feel. My site is stylish and efficient, and the customer support was outstanding!
+                                </p>
+                                <p class="text-sm font-medium">- Ray T, Small Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Set 2 -->
+                    <div class="w-full flex-shrink-0">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                            <!-- Testimonial 4 -->
+                            <div class="bg-brand-purple rounded-2xl p-6 text-white">
+                                <div class="flex gap-1 mb-4">
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-sm leading-relaxed mb-4">
+                                    Amazing service! Green Light Digital delivered exactly what I needed - a professional website that represents my brand perfectly. The process was seamless and the results exceeded my expectations.
+                                </p>
+                                <p class="text-sm font-medium">- Sarah M, Entrepreneur</p>
+                            </div>
+
+                            <!-- Testimonial 5 -->
+                            <div class="bg-brand-purple rounded-2xl p-6 text-white">
+                                <div class="flex gap-1 mb-4">
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-sm leading-relaxed mb-4">
+                                    I couldn't be happier with my new website! The team at Green Light Digital made the entire process stress-free and delivered a site that truly reflects my business values.
+                                </p>
+                                <p class="text-sm font-medium">- Mike D, Restaurant Owner</p>
+                            </div>
+
+                            <!-- Testimonial 6 -->
+                            <div class="bg-brand-purple rounded-2xl p-6 text-white">
+                                <div class="flex gap-1 mb-4">
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 text-brand-green fill-current" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-sm leading-relaxed mb-4">
+                                    Professional, efficient, and affordable - everything you want in a web design service. Green Light Digital transformed my online presence and helped grow my business significantly.
+                                </p>
+                                <p class="text-sm font-medium">- Lisa K, Consultant</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+ <!--section 7 review end-->
+
+ <!--section 8 follow us on social media start-->
+ <section class="py-12 sm:py-16 lg:py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header Section -->
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 sm:mb-12 gap-6">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#240D4B]">
+                    Follow us on social media
+                </h2>
+                
+                <!-- Social Media Icons -->
+                <div class="flex gap-3">
+                    <!-- Facebook -->
+                    <a href="#" class="w-12 h-12 bg-[#240D4B] hover:bg-brand-purple/90 rounded-lg flex items-center justify-center text-white transition-colors group">
+                       <img class=" h-7" src="./assets/Icon corebrands-facebook-f.png" alt="">
+                    </a>
+                    
+                    <!-- LinkedIn -->
+                    <a href="#" class="w-12 h-12 bg-[#240D4B] hover:bg-brand-purple/90 rounded-lg flex items-center justify-center text-white transition-colors group">
+                       <img class=" h-7" src="./assets/Icon akar-linkedin-fill.png" alt="">
+                    </a>
+                    
+                    <!-- Instagram -->
+                    <a href="#" class="w-12 h-12 bg-[#240D4B] hover:bg-brand-purple/90 rounded-lg flex items-center justify-center text-white transition-colors group">
+                        <img class=" h-7" src="./assets/Icon corebrands-instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Media Posts Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                
+                <!-- Post 1 - "It's The Weekend!" -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl aspect-square bg-gray-100 hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="./assets/Screenshot-1.png" 
+                            alt="It's The Weekend social media post" 
+                            class="w-full h-full object-cover"
+                        />
+                        <!-- Overlay on hover -->
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 - Greenlight Card -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl aspect-square bg-gray-100 hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="./assets/Screenshot-2.png" 
+                            alt="Greenlight business card social media post" 
+                            class="w-full h-full object-cover"
+                        />
+                        <!-- Overlay on hover -->
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 3 - Circular Logo -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl aspect-square bg-gray-100 hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="./assets/Screenshot-3.png" 
+                            alt="Greenlight Digital circular logo social media post" 
+                            class="w-full h-full object-cover"
+                        />
+                        <!-- Overlay on hover -->
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 4 - Office Interior -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-2xl aspect-square bg-gray-100 hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="./assets/Screenshot-4.png" 
+                            alt="Greenlight Digital office interior social media post" 
+                            class="w-full h-full object-cover"
+                        />
+                        <!-- Overlay on hover -->
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Optional: View More Button -->
+            <div class="text-center mt-8 sm:mt-12">
+                <a href="#" class="inline-flex items-center gap-2 bg-brand-purple hover:bg-brand-purple/90 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                    View More Posts
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+ <!--section 8 follow us on social media End-->
+
+ <!--section 9 footer start-->
+ <footer class="bg-[#012221] text-white overflow-hidden">
+        <!-- Main Footer Content -->
+        <div class="container mx-auto px-4 sm:px-6 lg:pl-8 py-12 lg:py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-1">
+                
+                <!-- Left Side - Let's Talk -->
+                <div class="space-y-6 lg:col-span-5">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl  font-bold text-[#AEE9B6]">
+                        Let's talk
+                    </h2>
+                    
+                    <div class="space-y-4 text-gray-300">
+                        <p class="text-sm sm:text-base leading-relaxed">
+                            If you have any questions or would like to get started, get in touch using our form and a member of our team will be in touch as soon as possible.
+                        </p>
+                        <p class="text-sm sm:text-base">
+                            Alternatively, you can reach us via:
+                        </p>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                           <img src="./assets/Icon material-email.png" alt="">
+                            <a href="mailto:info@greenlight-digital.co.uk" class="text-sm sm:text-base text-gray-300 hover:text-brand-light-green transition-colors">
+                                info@greenlight-digital.co.uk
+                            </a>
+                        </div>
+                        
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/Icon material-local-phone.png" alt="">
+                            <a href="tel:01234567890" class="text-sm sm:text-base text-gray-300 hover:text-brand-light-green transition-colors">
+                                01234 567 890
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Icons -->
+                    <div class="flex items-center gap-4 pt-4">
+                        <a href="#" class=" ">
+                           <img class=" h-5" src="./assets/Icon corebrands-facebook-f.png" alt="">
+                        </a>
+                        <a href="#" class="">
+                            <img class=" h-5" src="./assets/Icon akar-linkedin-fill.png" alt="">
+                        </a>
+                        <a href="#" class="">
+                            <img class=" h-5" src="./assets/Icon corebrands-instagram.png" alt="">
+                        </a>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side - Contact Form -->
+                <div class="relative w-full lg:col-span-7 xl:w-[900px]">
+                    <div class="border-4 w-full   border-[#AEE9B6]  rounded-3xl p-6 sm:p-8">
+                        <form class="space-y-6 xl:w-[80%] mr-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                              <div class="flex flex-col">
+                                <!-- Name Field -->
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                                    <input 
+                                        type="text" 
+                                        id="name" 
+                                        name="name" 
+                                        class="w-full px-4 py-1 bg-transparent border  border-[#AEE9B7] rounded-lg text-white placeholder-gray-400 focus:border-brand-light-green focus:outline-none focus:ring-1 focus:ring-brand-light-green transition-colors"
+                                        placeholder="Your name"
+                                    >
+                                </div>
+
+                                <!-- Email Field -->
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        class="w-full px-4 py-1 bg-transparent border border-[#AEE9B7] rounded-lg text-white placeholder-gray-400 focus:border-brand-light-green focus:outline-none focus:ring-1 focus:ring-brand-light-green transition-colors"
+                                        placeholder="your@email.com"
+                                    >
+                                </div>
+                            
+
+                            <!-- Telephone Field -->
+                            <div>
+                                <label for="telephone" class="block text-sm font-medium text-gray-300 mb-2">Telephone</label>
+                                <input 
+                                    type="tel" 
+                                    id="telephone" 
+                                    name="telephone" 
+                                    class="w-full px-4 py-1 bg-transparent border  border-[#AEE9B7] rounded-lg text-white placeholder-gray-400 focus:border-brand-light-green focus:outline-none focus:ring-1 focus:ring-brand-light-green transition-colors"
+                                    placeholder="Your phone number"
+                                >
+                            </div>
+                            </div>
+                          
+                            <!-- Message Field -->
+                             <div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium  text-gray-300 mb-2">Message</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="4"
+                                    class="w-full h-[157px] px-4 py-3 bg-transparent border  border-[#AEE9B7] rounded-lg text-white placeholder-gray-400 focus:border-brand-light-green focus:outline-none focus:ring-1 focus:ring-brand-light-green transition-colors resize-vertical"
+                                    placeholder="Tell us about your project..."
+                                ></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="flex justify-end">
+                                <button 
+                                    type="submit" 
+                                    class="bg-brand-light-green hover:bg-brand-accent-green text-brand-dark-green font-semibold px-8 py-3 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-brand-light-green focus:ring-offset-2 focus:ring-offset-brand-dark-green"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-1">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                    
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <div class="text-2xl sm:text-5xl font-bold text-white">
+                            Greenlight
+                            <span class="block text-sm font-normal tracking-wider text-gray-300">D I G I T A L</span>
+                        </div>
+                    </div>
+            <div class=" lg:w-full lg:flex lg:flex-col lg:items-end lg:gap-2">
+                    <!-- Navigation Links -->
+                    <nav class="flex  flex-wrap gap-6 lg:gap-20">
+                        <a href="#" class="text-sm text-gray-300 hover:text-brand-light-green transition-colors">Our Websites</a>
+                        <a href="#" class="text-sm text-gray-300 hover:text-brand-light-green transition-colors">About Us</a>
+                        <a href="#" class="text-sm text-gray-300 hover:text-brand-light-green transition-colors">Giving Back</a>
+                        <a href="#" class="text-sm text-gray-300 hover:text-brand-light-green transition-colors">Reviews</a>
+                        <a href="#" class="text-sm text-gray-300 hover:text-brand-light-green transition-colors">Talk To Us</a>
+                    </nav>
+
+                    <!-- Contact Info & Social -->
+                    <div class="flex lg:gap-9 flex-col sm:flex-row sm:items-center gap-4">
+                        <div class="flex items-center gap-4 text-sm text-gray-300">
+                           <img class="h-3" src="./assets/Icon material-email.png" alt="">
+                            <a href="mailto:info@greenlight-digital.co.uk" class="hover:text-brand-light-green transition-colors">
+                                info@greenlight-digital.co.uk
+                            </a>
+                             <img class="h-3" src="./assets/Icon material-local-phone.png" alt="">
+                            <a href="tel:01234567890" class="hover:text-brand-light-green transition-colors">
+                                01234 567 890
+                            </a>
+                        </div>
+                        
+                        <!-- Social Icons -->
+                        <div class="flex gap-3">
+                            <a class="text-greenlight" href="#"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                            <a class="text-greenlight" href="#"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                           <a class="text-greenlight" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                        </div>
+                    </div>
+              </div>
+                </div>
+
+                <!-- Bottom Links & Copyright -->
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mt-8 pt-6 border-t border-gray-600">
+                    <div class="flex gap-6">
+                        <a href="#" class="text-xs text-gray-400 hover:text-brand-light-green transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-xs text-gray-400 hover:text-brand-light-green transition-colors">Terms & Conditions</a>
+                    </div>
+                    <p class="text-xs text-gray-400">Green Light Digital 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <!-- Footer Section -->
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
